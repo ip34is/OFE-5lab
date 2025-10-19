@@ -12,34 +12,25 @@
     <form id="validationForm" novalidate>
         <div class="form-group">
             <label for="fullName">ПІБ (формат: Прізвище І.Б.)</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Шевченко Т.Г."
-                   pattern="^[А-ЯІЇЄҐ][а-яіїєґ']+\s[А-ЯІЇЄҐ]\.[А-ЯІЇЄҐ]\.$"
-                   title="Введіть прізвище та ініціали, наприклад: Шевченко Т.Г.">
-        </div>
-        <div class="form-group">
-            <label for="variant">Варіант (формат: ЧЧ)</label>
-            <input type="text" id="variant" name="variant" placeholder="16"
-                   pattern="^\d{2}$"
-                   title="Введіть двозначне число.">
-        </div>
-        <div class="form-group">
-            <label for="group">Група (формат: ТТ-ЧЧ)</label>
-            <input type="text" id="group" name="group" placeholder="ІП-01"
-                   pattern="^[А-ЯІЇЄҐ]{2}-\d{2}$"
-                   title="Введіть дві великі українські літери, дефіс та дві цифри.">
-        </div>
-        <div class="form-group">
-            <label for="phone">Телефон (формат: (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ)</label>
-            <input type="tel" id="phone" name="phone" placeholder="(099)-123-45-67"
-                   pattern="^\(\d{3}\)-\d{3}-\d{2}-\d{2}$"
-                   title="Введіть номер у форматі (XXX)-XXX-XX-XX.">
+            <input type="text" id="fullName" name="fullName" placeholder="Скачков І.О.">
         </div>
         <div class="form-group">
             <label for="idCard">ID-card (формат: ТТ №ЧЧЧЧЧЧ)</label>
-            <input type="text" id="idCard" name="idCard" placeholder="КС №123456"
-                   pattern="^[А-ЯІЇЄҐ]{2}\s№\d{6}$"
-                   title="Введіть дві великі українські літери, пробіл, знак № та шість цифр.">
+            <input type="text" id="idCard" name="idCard" placeholder="ІП №123456">
         </div>
+        <div class="form-group">
+            <label for="faculty">Факультет (формат: ТТТТ)</label>
+            <input type="text" id="faculty" name="faculty" placeholder="ФІОТ">
+        </div>
+        <div class="form-group">
+            <label for="birthDate">Дата народження (формат: ДД.ММ.РРРР)</label>
+            <input type="text" id="birthDate" name="birthDate" placeholder="01.01.2005">
+        </div>
+        <div class="form-group">
+            <label for="address">Адреса (формат: м. Місто)</label>
+            <input type="text" id="address" name="address" placeholder="м. Київ">
+        </div>
+
         <button type="submit" id="submitBtn">Перевірити</button>
     </form>
 </div>
